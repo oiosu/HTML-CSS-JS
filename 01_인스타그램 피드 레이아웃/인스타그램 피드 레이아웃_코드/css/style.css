@@ -1,0 +1,53 @@
+body {
+    background-color: #c6c6c6;
+    margin: 0px;
+}
+
+.wrap {
+    background-color: white;
+    width: 375px;
+    height: 100vh;
+    /* margin 0 auto를 통해서 동일한 여백을 줄 수 있다. */
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.instargram {
+    width: 100%;
+    height: 550px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows:50px 275px 1fr ;
+    grid-template-areas: 
+    /* 공간넣어주기 */
+    "header"
+    "img"
+    "footer";
+
+    /* 진짜 인스타그램처럼 보이도록 */
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+/* instargram 공간에 모두 부여 => 100% */
+.header {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+}
