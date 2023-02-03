@@ -34,13 +34,56 @@ body {
 }
 
 /* instargram 공간에 모두 부여 => 100% */
+
+/* Header */
 .header {
     grid-area: header;
-    width: 100%;
-    height: 100%;
+    /* margin 값을 주면, 살짝 삐져나오게 된다. */
+    /* 이를 해결하기 위해 100% 를 */
+    /* auto 으로 값 설정해주면 된다. */
+    width: auto;
+    height: auto;
+    /* 위 아래 공간 주기*/
+    margin: 5px 10px;
 }
 
+.header-left {
+    float: left;
+    /* p태그의 블럭속성으로 인해 이미지 아래 위치하고 있다. */
+    /* 이미지 옆으로 p태그가 가기위해 flex 한다. */
+    display: flex;
+    /* 중앙정렬 */
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.header-img {
+    border: 1px solid black;
+    border-radius: 50%;
+    /* 이미지와 p 태그 사이 공간을 주기 위해 margin 값 설정 */
+    margin-right: 10px;
+}
+
+.header-right {
+    float: right;
+    /* 세로로 정렬하기 위해 100% 값 설정 */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* p태그로 작성했기에 드래그가 되는데 이를 버튼 형식처럼 보여주기 위해 */
+/* 마우스 포인터가 올려졌을 때 버튼 누르는 모양이 되도록 만들어준다. */
+.right-menu {
+    cursor: pointer;
+    /* 클릭만 하고 드래그 안된다! */
+    user-select: none;
+}
+
+
 .img{
+    clear: both;
     grid-area: img;
     width: 100%;
     height: 100%;
@@ -51,3 +94,4 @@ body {
     width: 100%;
     height: 100%;
 }
+
