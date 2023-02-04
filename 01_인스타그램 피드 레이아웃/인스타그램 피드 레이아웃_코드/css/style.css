@@ -140,6 +140,14 @@ body {
     margin-top: 6px;
 }
 
+.top-right-img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 720px;
+    top: 600px;
+}
+
 .like {
     grid-area: like;
     font-size: 12px;
