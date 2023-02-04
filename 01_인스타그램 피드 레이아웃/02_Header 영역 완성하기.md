@@ -1,3 +1,3 @@
 # 02_Header 영역 완성하기
 
-![image-20230203235107425](../imges/02_Header 영역 완성하기/image-20230203235107425.png)
+![image](https://user-images.githubusercontent.com/99783474/216744032-a647430a-6afb-4078-baba-27341ceefb42.png)
