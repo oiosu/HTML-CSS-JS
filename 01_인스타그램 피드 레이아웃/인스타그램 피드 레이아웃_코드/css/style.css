@@ -31,6 +31,8 @@ body {
     /* 진짜 인스타그램처럼 보이도록 */
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 }
 
 /* instargram 공간에 모두 부여 => 100% */
@@ -59,7 +61,7 @@ body {
 }
 
 .header-img {
-    border: 1px solid black;
+    border: 3px solid lightpink;
     border-radius: 50%;
     /* 이미지와 p 태그 사이 공간을 주기 위해 margin 값 설정 */
     margin-right: 10px;
@@ -138,6 +140,8 @@ body {
     grid-area: like;
     font-size: 12px;
     margin: 0 12px;
+    height: 20px;
+    
 }
 
 .comment {
