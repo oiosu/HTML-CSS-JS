@@ -46,11 +46,28 @@
     <br>
 
     <form action="./result.html" method="get">
-        <select name="color" multiple>
+        <!--  multiple은 사용자에 따라서 효율적이지 않다. -->
+        <select name="color">
             <option value="red">빨간색</option>
             <option value="blue">파랑색</option>
             <option value="yellow">노랑색</option>
         </select>
+
+        <!-- 다중선택 -->
+        <div>
+            모자 : <input type="checkbox" name="kind" value="hat">
+            상의 : <input type="checkbox" name="kind" value="top">
+            하의 : <input type="checkbox" name="kind" value="bottom">
+            양말 : <input type="checkbox" name="kind" value="socks">
+        </div>
+
+        <!-- 성별_반드시 하나의 값만 선택할 수 있도록 만들기 : radio -->
+        <div>
+            남자 : <input type="radio" name="gender" value="man">
+            여자 : <input type="radio" name="gender" value="woman">
+        </div>
+
+
         <input type="submit" value="제출">
     </form>
 
