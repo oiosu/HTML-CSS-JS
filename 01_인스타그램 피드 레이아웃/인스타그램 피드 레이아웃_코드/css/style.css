@@ -119,6 +119,23 @@ body {
     margin-top: 6px;
 }
 
+/* 마우스를 올렸을 때 하트 빨강색으로 만들어주기*/
+.top-left span {
+    cursor: pointer;
+}
+
+/* top-left 중에서도 첫번째 */
+.top-left span:nth-of-type(1):hover {
+    color: red;
+}
+
+/* 채워진 하트 */
+#fill-heart {
+    display: none;
+    /* 채워진 하트 색깔 */
+    fill: red;
+}
+
 .top-center {
     grid-area: top-center;
     display: flex;
