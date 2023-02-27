@@ -45,7 +45,7 @@
 
 .divider {
     display: grid;
-    width: 260px;
+    width: 360px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -68,3 +68,38 @@ p {
     border: none;
     background-color: lightgray;
 }
+
+.form {
+    width: 260px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-style{
+    padding: 9px 0px 7px 8px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(38, 38, 38);
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+
+.input-style::placeholder {
+    font-size: 12px;
+}
+
+input:active, input:focus {
+    outline: none;
+    border: 2px solid gray;
+}
+
+.submit-style {
+    background-color: cornflowerblue;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 9px 0px 7px 0px;
+}
+
