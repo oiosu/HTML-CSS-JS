@@ -62,3 +62,9 @@ span {
 p {
     color: rgb(142, 142, 142);
 }
+
+.hr-style {
+    height: 1px;
+    border: none;
+    background-color: lightgray;
+}
