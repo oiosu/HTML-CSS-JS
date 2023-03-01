@@ -17,12 +17,25 @@ body {
     margin: 0 auto;
 }
 
+.black-bg {
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
 /* header */
 header {
     background-color: black;
     text-align: center;
     padding-top: 20px;
     position: relative;
+    z-index: 10;
 }
 
 header .gnb {
@@ -202,6 +215,7 @@ header .gnb .search .searchUl li span {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    z-index: 10;
 }
 
 .notice p {
@@ -240,6 +254,9 @@ header .gnb .search .searchUl li span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    position: relative;
+    z-index: 10;
 
 
     /* border: 1px solid black;
