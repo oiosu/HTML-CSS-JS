@@ -128,6 +128,7 @@ header .gnb .menu {
     justify-content: space-between;
     font-weight: bold;
     width: 100%;
+    margin-top: 50px;
     /* margin-left: 40px; */
 }
 
@@ -207,6 +208,7 @@ header .gnb .search .searchUl li span {
     border-radius: 14px;
     text-align: center;
     height: 320px;
+    margin-bottom: 50px;
     
     position: relative;
 
@@ -214,7 +216,7 @@ header .gnb .search .searchUl li span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     z-index: 10;
 }
 
@@ -243,6 +245,7 @@ header .gnb .search .searchUl li span {
 .mainBanner {
     height: 600px;
     border-radius: 14px;
+    /* margin-top: 40px; */
 
     display: flex;
     flex-direction: column;
