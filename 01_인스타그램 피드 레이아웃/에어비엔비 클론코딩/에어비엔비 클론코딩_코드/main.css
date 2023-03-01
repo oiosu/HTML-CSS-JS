@@ -356,6 +356,19 @@ header .gnb .search .searchUl li span {
     "div1 div2";
 }
 
+/* ___반응형___ */
+@media screen(max-width: 576px) {
+    .expression {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "heading"
+        "div1"
+        "div2";
+    }
+}
+
 .expression .photoDiv {
     /* width: 100%; */
     height: calc(700px - calc(60px* 2));
