@@ -345,3 +345,52 @@ header .gnb .search .searchUl li span {
 }
 
 /* EXPRESSION */
+.expression {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas: 
+    "heading heading"
+    "div1 div2";
+}
+
+.expression .photoDiv {
+    /* width: 100%; */
+    height: calc(700px - calc(60px* 2));
+    padding: 60px;
+    border-radius: 14px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expression .photoDiv:nth-last-of-type(1) {
+    background-image: url("https://i.pinimg.com/474x/0d/cb/14/0dcb14d1029cdc29d51d23aed35d2ac1.jpg");
+}
+
+.expression .photoDiv:nth-last-of-type(2) {
+    background-image: url("https://i.pinimg.com/474x/69/17/ac/6917ac747a8f07b87e760f5e85ba95b8.jpg");
+} 
+
+.expression .photoDiv p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.expression .photoDiv button {
+    color: darkgray;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    padding: 15px 23px;
+    border-radius: 14px;
+    margin-top: 1rem;
+}
+
+.expression .photoDiv button:hover {
+    background-color: lightgrey;
+}
